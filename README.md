@@ -126,7 +126,7 @@ Just upload init.lua to your nodemcu / esp8266 using your favourite esp file upl
 
 ## Flowcharts
 
-![usage example]i(https://raw.githubusercontent.com/mrizvic/nodemcu-uart2http-exosite/master/flowchart1.png)
+![usage example](https://raw.githubusercontent.com/mrizvic/nodemcu-uart2http-exosite/master/flowchart1.png)
 
 ## Schematics
 I suggest you connect your ESP8266 or nodemcu to ARDUINO in similar fashion as it is described in this blogpost: http://microcontrollerkits.blogspot.com/2015/02/wifi-module-esp8266-at-command-test.html
