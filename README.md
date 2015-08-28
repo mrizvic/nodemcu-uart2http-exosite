@@ -124,6 +124,10 @@ Code is written in such manner that it should reopen TCP connection if not conne
 
 Just upload init.lua to your nodemcu / esp8266 using your favourite esp file uploader :) I find it easy with http://esp8266.ru/esplorer/ . I tried on Windows 7 and Linux.
 
+## Flowcharts
+
+![usage example]i(https://raw.githubusercontent.com/mrizvic/nodemcu-uart2http-exosite/master/flowchart1.png)
+
 ## Schematics
 I suggest you connect your ESP8266 or nodemcu to ARDUINO in similar fashion as it is described in this blogpost: http://microcontrollerkits.blogspot.com/2015/02/wifi-module-esp8266-at-command-test.html
 
@@ -134,7 +138,6 @@ For Arduino **5V** Power Supply and Logic **( Need logic Converter )**
 
 For Arduino **3.3V** Power Supply and Logic
 ![arduino wiring](https://raw.githubusercontent.com/mrizvic/nodemcu-uart2mqtt/master/WiringDiagramEsp8266.png)
-
 
 ## Prerequisites
 ```
