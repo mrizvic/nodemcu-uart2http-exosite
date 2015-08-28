@@ -56,6 +56,7 @@ ESP8266 / nodemcu takes HTTP response code out of this and responds to arduino:
 ```
 
 Its similar if you want to read value from exosite. From arduino send:
+```
 Ralias1&alias2\r\n
 ```
 
