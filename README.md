@@ -122,7 +122,7 @@ Code is written in such manner that it should reopen TCP connection if not conne
 
 ## Installation
 
-Just upload init.lua to your nodemcu / esp8266 using your favourite esp file uploader :) I find it easy with http://esp8266.ru/esplorer/ . I tried on Windows 7 and Linux.
+Just upload init.lua to your nodemcu / esp8266 using your favourite esp file uploader :) I find it easy with http://esp8266.ru/esplorer/ . I tried on Windows 7 and Linux. Im using nodemcu_float_0.9.6-dev_20150704.bin firmware version from https://github.com/nodemcu/nodemcu-firmware/releases
 
 ## Flowcharts
 
@@ -141,7 +141,7 @@ For Arduino **3.3V** Power Supply and Logic
 
 ## Prerequisites
 ```
--lua firmware on nodemcu / esp8266 - im using nodemcu_float_0.9.6-dev_20150704.bin from https://github.com/nodemcu/nodemcu-firmware/releases
+-lua firmware (nodemcu_float_0.9.6-dev_20150704.bin) on nodemcu / esp8266
 -tool to upload .lua files
 ```
 
