@@ -65,7 +65,7 @@ end
 -- initialise custom UART handler
 -- be careful as this steals LUA interpreter
 uart.on("data", UART_TERMINATOR1, function(data)
-    uart.write(0, STATUS_REGISTER)
+    uart.write(0, STATUS_REGISTER, UART_TERMINATOR1)
     local s = string.gsub(data, UART_TERMINATORS, "") -- remove termination characters
     local slen = string.len(s)
     local b = string.byte(s,1)
@@ -94,6 +94,7 @@ uart.on("data", UART_TERMINATOR1, function(data)
     elseif bit.isclear(SSID_REGISTER, WIFIPASSWORD_RECEIVED_FLAG) then
         wificfg.pwd=s
         SSID_REGISTER=bit.set(SSID_REGISTER, WIFIPASSWORD_RECEIVED_FLAG)
+		wifi.setmode(wifi.STATION)
         wifi.sta.config(wificfg.ssid, wificfg.pwd)
         wifi.sta.autoconnect(1)
         tmr.alarm(3, 200, 1, function()
@@ -114,6 +115,6 @@ uart.on("data", UART_TERMINATOR1, function(data)
         dataz=string.sub(s,2,slen)
         read_data(dataz)
     else
-        uart.write(0,'undefined error')
+        uart.write(0,'undefined error', UART_TERMINATOR1)
     end
 end, 0)
